@@ -18,11 +18,11 @@ keep_alive()
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7467091333:AAFUYsurMTdAI-2sHpum1BxnAAQJmbJNmsc'
+TOKEN = '7526751413:AAFPu3ggopXrB2Ek1m5uMmycHk8boPaYhb8'
 MONGO_URI = 'mongodb+srv://Cluster0:Cluster0@cluster0.5mvg9ej.mongodb.net/danger?retryWrites=true&w=majority'
-FORWARD_CHANNEL_ID = -1002213236139
-CHANNEL_ID = -1002213236139
-error_channel_id = -1002213236139
+FORWARD_CHANNEL_ID = -1002215301907
+CHANNEL_ID = -1002215301907
+error_channel_id = -1002215301907
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
