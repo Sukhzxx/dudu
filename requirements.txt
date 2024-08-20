@@ -1,3 +1,4 @@
 telebot 
 pymongo 
-./bgmi 
+aiohttp
+bgmi 
