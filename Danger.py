@@ -13,8 +13,6 @@ from threading import Thread
 import asyncio
 import aiohttp
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-from keep_alive import keep_alive
-keep_alive()
 
 loop = asyncio.get_event_loop()
 
