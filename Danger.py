@@ -13,7 +13,8 @@ from threading import Thread
 import asyncio
 import aiohttp
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-
+from keep_alive import keep_alive
+keep_alive()
 loop = asyncio.get_event_loop()
 
 TOKEN = '7467091333:AAFUYsurMTdAI-2sHpum1BxnAAQJmbJNmsc'
@@ -28,7 +29,7 @@ client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
 db = client['danger']
 users_collection = db.users
 
-bot = telebot.TeleBot(TOKEN)
+bot = Bot(token=os.environ.get('token'))
 REQUEST_INTERVAL = 1
 
 blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]  # Blocked ports list
