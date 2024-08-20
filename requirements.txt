@@ -1,3 +1,5 @@
-pip install telebot
+pkg install upgrade 
+pkg install update
+pkg install telebot
 flask
 
